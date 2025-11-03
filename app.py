@@ -8,7 +8,7 @@ import os
 
 app = Flask(__name__)
 model = load_model('face_emotionModel.h5')
-model_url = https://drive.google.com/uc?export=download&id=1scmXLfFqUKUhF_ZbGR-zksVAA5MvXd1n
+model_url = "https://drive.google.com/uc?export=download&id=1scmXLfFqUKUhF_ZbGR-zksVAA5MvXd1n"
 
 emotion_labels = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
 
@@ -33,4 +33,5 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
